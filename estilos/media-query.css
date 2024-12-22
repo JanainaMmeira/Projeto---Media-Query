@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+/*Para telas pequenas*/
+@media screen and (min-width: 768px) {
+    i#burguer {
+        display: none;
+    }
+    menu {
+        display: block;
+    }
+    menu > ul > li {
+        display:  inline-flex;
+    }
+
+    main {
+        width: 768px;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    i#burguer {
+        display: none;
+    }
+    menu {
+        display: block;
+    }
+    menu > ul > li {
+        display:  inline-flex;
+    }
+
+    main {
+        width: 992px;
+        margin: auto;
+    }
+
+
+}

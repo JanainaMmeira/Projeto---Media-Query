@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: "supermario";
+    src: url('../fonte/SuperMario256.ttf')  format('truetype');
+}
+
+body, html {
+    background-color: darkgray;
+}
+
+h1 {
+    font-family: 'supermario';
+    font-size: 80px;
+    text-align: center;
+
+    color: white;
+}
+
+div.titulo {
+   flex-flow: row nowrap;
+}
+
+main > article {
+    width: 90vh;
+    padding: 10px;
+    margin: auto;
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+
+article > h2 {
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+article> p {
+    text-align: justify;
+    margin-bottom: 20px;
+    text-indent: 20px;
+}
+
+#mario {
+    width: 100px;
+}
+
+span {
+    
+    color: blue;
+    display: block;
+    text-align: center;
+    padding: 10px;
+
+
+}
+
+
+
+
+
+/* Para telas menores que 480px (Celulares pequenos) */
+@media screen and (max-width: 480px) {
+    i#burguer {
+        display: none;
+    }
+    menu {
+        display: block;
+    }
+    menu > ul > li {
+        display:  inline-flex;
+    }
+
+    main {
+        width: 448px;
+        margin: auto;
+    }
+
+}
+
+/* Para telas menores que 768px (Tablets em modo retrato e celulares grandes) */
+@media screen and (max-width: 768px) {
+    i#burguer {
+        display: none;
+    }
+    menu {
+        display: block;
+    }
+    menu > ul > li {
+        display:  inline-flex;
+    }
+
+    main {
+        width: 768px;
+        margin: auto;
+    }
+}
+
+/* Para telas menores que 992px (Tablets em modo paisagem e menor) */
+
+@media screen and (max-width: 992px) {
+    i#burguer {
+        display: none;
+    }
+    menu {
+        display: block;
+    }
+    menu > ul > li {
+        display:  inline-flex;
+    }
+
+    main {
+        width: 992px;
+        margin: auto;
+    }
+}
+
+
