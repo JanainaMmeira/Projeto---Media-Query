@@ -101,8 +101,18 @@ article> p {
     text-align: center;
 }
 
-picture > img {
-    width: 770px;
+#imagem {
+    display: block;
+    background: url('../imagens/personagens-mario-capa.webp') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    margin-bottom: 10px;
+
+    
+
+    border-radius: 10px;
+  
 }
 
 footer {

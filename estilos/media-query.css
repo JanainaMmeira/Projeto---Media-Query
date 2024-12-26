@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /*Para telas pequenas*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
     i#burguer {
         display: none;
     }
@@ -16,9 +16,22 @@
         width: 768px;
         margin: auto;
     }
+    
+    div#imagem {
+        float: center;
+        width: 30%;
+        height: 100%;
+
+        border-radius: 20px;
+
+
+    }
+
+    }
+
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) and (max-width: 1200px)) {
     i#burguer {
         display: none;
     }
@@ -33,6 +46,17 @@
         width: 992px;
         margin: auto;
     }
+
+    div#imagem {
+        float: center;
+        width: 30%;
+        height: 100%;
+
+        border-radius: 20px;
+
+
+    }
+
 
 
 }
