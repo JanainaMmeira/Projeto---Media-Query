@@ -7,11 +7,6 @@
     padding: 0px;
 }
 
-@font-face {
-    font-family: "supermario";
-    src: url('../fonte/SuperMario256.ttf')  format('truetype');
-}
-
 body, html {
     background-color: darkgray;
 }
@@ -63,31 +58,91 @@ span {
 
 }
 
+section {
+    display: block;
+
+    justify-items: center;
+}
+
+section > div#mario {
+    background: url('../imagens/MarioHub_Characters_CharBtn_Mario_on.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 200px;    
+
+    text-align: center;
+
+    margin: 10px;
+}
 
 
+section > div#luigi {
+    background: url('../imagens/MarioHub_Characters_CharBtn_Luigi_on.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 200px;    
+
+    text-align: center;
+
+    margin: 10px;
+}
 
 
-/* Para telas menores que 480px (Celulares pequenos) */
-@media screen and (max-width: 480px) {
-    i#burguer {
-        display: none;
-    }
-    menu {
-        display: block;
-    }
-    menu > ul > li {
-        display:  inline-flex;
-    }
+section > div#peach {
+    background: url('../imagens/MarioHub_Characters_CharBtn_Peach_on.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 200px;    
 
-    main {
-        width: 448px;
-        margin: auto;
-    }
+    text-align: center;
+
+    margin: 10px;
 
 }
 
-/* Para telas menores que 768px (Tablets em modo retrato e celulares grandes) */
-@media screen and (max-width: 768px) {
+section > div#daisy {
+    background: url('../imagens/MarioHub_Characters_CharBtn_Daisy_on.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 200px;    
+
+    text-align: center;
+
+    margin: 10px;
+}
+
+section > div#toad {
+    background: url('../imagens/MarioHub_Characters_CharBtn_Toad_on.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 200px;    
+
+    text-align: center;
+
+    margin: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+span {
+    justify-content: center;
+    align-content: center;
+
+    width: 200px;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
     i#burguer {
         display: none;
     }
@@ -102,11 +157,19 @@ span {
         width: 768px;
         margin: auto;
     }
-}
+    
+    div#imagem {
+        float: center;
+        width: 30%;
+        height: 100%;
 
-/* Para telas menores que 992px (Tablets em modo paisagem e menor) */
+        border-radius: 20px;
+    }
 
-@media screen and (max-width: 992px) {
+    }
+
+
+@media screen and (min-width: 992px) and (max-width: 1200px)) {
     i#burguer {
         display: none;
     }
@@ -121,6 +184,15 @@ span {
         width: 992px;
         margin: auto;
     }
+
+    div#imagem {
+        float: center;
+        width: 30%;
+        height: 100%;
+
+        border-radius: 20px;
+
+
+    }
+
 }
-
-
