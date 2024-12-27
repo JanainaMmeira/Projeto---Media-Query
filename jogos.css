@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+
+@font-face {
+    font-family: "supermario";
+    src: url('../fonte/SuperMario256.ttf')  format('truetype');
+}
+
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html {
+    background-color: darkgray;
+}
+
+header {
+    width: 90vh;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    background-color: gray;
+
+    border-radius: 20px;
+    
+    font-family: 'supermario';
+
+}
+h1 {
+    font-family: 'supermario';
+    font-size: 80px;
+    text-align: center;
+
+    color: white;
+}
+
+div.titulo {
+   flex-flow: row nowrap;
+}
+
+main > section {
+    width: 90vh;
+    padding: 10px;
+    margin: auto;
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+
+h2 {
+    padding-bottom: 25px;
+    text-align: center;
+
+    font-size: 2em;
+}
+
+p {
+    text-align: justify;
+    margin-bottom: 20px;
+    text-indent: 20px;
+    padding: 15px;
+}
+
+#jg1 {
+    background: url('../Projeto---Media-Query/imagens/mario-iconico-super-mario-bros-nes-nintendo-8-bits.webp') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    width: 200px;    
+
+    text-align: center;
+
+    margin: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+span {
+    justify-content: center;
+    align-content: center;
+
+    width: 200px;
+}

@@ -18,9 +18,14 @@ body, html {
     background-color: darkgray;
 }
 
-header{
+header {
+    display: block;
     background-color: gray;
+    margin: auto;
+    width: 92.5vh;
+    text-align: center;
 
+    border-radius: 20px;
 }
 
 h1 {
@@ -96,6 +101,7 @@ article> p {
     text-align: justify;
     margin-bottom: 20px;
     text-indent: 20px;
+
 }
 
 #mario {
@@ -123,4 +129,72 @@ footer {
     text-align: center;
 
     border-radius: 12px;
+}
+
+
+/*Para telas pequenas*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    header {
+        width: 92.5vh;
+        display: block;
+        
+    }
+    i#burguer {
+        display: none;
+    }
+    menu {
+        display: block;
+    }
+    menu > ul > li {
+        display:  inline-flex;
+    }
+
+    main {
+        width: 768px;
+        margin: auto;
+    }
+    
+    div#imagem {
+        float: center;
+        width: 30%;
+        height: 100%;
+
+        border-radius: 20px;
+
+
+    }
+
+    }
+
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px)) {
+    i#burguer {
+        display: none;
+    }
+    menu {
+        display: block;
+    }
+    menu > ul > li {
+        display:  inline-flex;
+    }
+
+    main {
+        width: 992px;
+        margin: auto;
+    }
+
+    div#imagem {
+        float: center;
+        width: 30%;
+        height: 100%;
+
+        border-radius: 20px;
+
+
+    }
+
+
+
 }
