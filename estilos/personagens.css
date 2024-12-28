@@ -175,9 +175,9 @@ footer {
     display: flex;
     background-color: gray;
 
-    border-radius: 20px;
+    margin: auto;
 
-    width: 90vh;
+    border-radius: 10px;
  
 }
 
@@ -185,17 +185,23 @@ footer {
 .material-symbols-outlined {
     justify-content: center;
     align-content: center;
+    align-self: center;
     width: 90vh;
+
+    
+}
+/*
+span {
+    color: black;
+    display: flex;
+    text-align: center;
+    padding: 10px;
+    margin: auto;
+
     margin: auto;
 }
 
-span {
-    color: black;
-    display: block;
-    text-align: center;
-    padding: 10px;
-}
-
+*/
 @media screen and (min-width: 768px) and (max-width: 992px) {
     i#burguer {
         display: none;
