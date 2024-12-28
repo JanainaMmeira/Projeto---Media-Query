@@ -17,9 +17,12 @@ body, html {
     background-color: darkgray;
 }
 
-header {
+header, main, footer {
     width: 90vh;
     margin: auto;
+}
+
+header {
     padding-left: 10px;
     padding-right: 10px;
 
@@ -51,7 +54,6 @@ div#personagens {
     height: 330px;
 }
 main > section {
-    width: 90vh;
     padding: 10px;
     margin: auto;
     background-color: white;
@@ -73,6 +75,8 @@ p {
     margin-bottom: 20px;
     text-indent: 20px;
     padding: 15px;
+
+    gap: 0.2em;
 }
 
 #mario {
@@ -171,37 +175,33 @@ section > div#yoshi {
 
 }
 
-footer {
-    display: flex;
-    background-color: gray;
-
+article#botao {
     margin: auto;
-
-    border-radius: 10px;
- 
-}
-
-
-.material-symbols-outlined {
-    justify-content: center;
-    align-content: center;
-    align-self: center;
-    width: 90vh;
-
-    
-}
-/*
-span {
-    color: black;
-    display: flex;
     text-align: center;
-    padding: 10px;
-    margin: auto;
-
-    margin: auto;
+    padding-bottom: 5px;
 }
 
-*/
+#botao > a::after {
+text-decoration: blue;
+}
+
+footer {
+background-color: gray;
+text-align: center;
+border-radius: 10px;
+
+font-weight: small;
+}
+
+
+footer > a {
+text-decoration: none;
+}
+
+a:hover {
+text-decoration: dashed;
+}
+
 @media screen and (min-width: 768px) and (max-width: 992px) {
     i#burguer {
         display: none;
@@ -229,7 +229,7 @@ span {
     }
 
 
-@media screen and (min-width: 992px) and (max-width: 1200px)) {
+@media screen and (min-width: 992px) and (max-width: 1200px) {
     i#burguer {
         display: none;
     }

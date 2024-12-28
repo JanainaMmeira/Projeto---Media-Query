@@ -18,9 +18,13 @@ body, html {
     background-color: darkgray;
 }
 
-header {
+
+header, main, footer {
     width: 90vh;
     margin: auto;
+}
+
+header {
     padding-left: 10px;
     padding-right: 10px;
 
@@ -31,9 +35,10 @@ header {
     font-family: 'supermario';
 
 }
-h1 {
+
+header > h1 {
     font-family: 'supermario';
-    font-size: 80px;
+    font-size: 50px;
     text-align: center;
 
     color: white;
@@ -44,7 +49,6 @@ div.titulo {
 }
 
 main > section {
-    width: 90vh;
     padding: 10px;
     margin: auto;
     background-color: white;
@@ -53,11 +57,12 @@ main > section {
 }
 
 
-h2 {
-    padding-bottom: 25px;
+main > section > h2 {
+    padding-bottom: 10px;
+    font-family: 'supermario';
     text-align: center;
 
-    font-size: 2em;
+    font-size:3em;
 }
 
 p {
@@ -65,30 +70,142 @@ p {
     margin-bottom: 20px;
     text-indent: 20px;
     padding: 15px;
+
+    gap: 0.2em;
 }
 
-#jg1 {
-    background: url('../Projeto---Media-Query/imagens/mario-iconico-super-mario-bros-nes-nintendo-8-bits.webp') no-repeat;
+#jogo01 {
+    background: url('imagens/Super\ Mario\ Bros-jogo01.avif') no-repeat;
     background-size: cover;
     background-position: center;
-    height: 300px;
-    width: 200px;    
+
+    margin: auto;
+}
+
+#jogo02 {
+    background: url('imagens/SuperMarioBros3-jogo03.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    margin: auto;
+
+}
+
+#jogo03 {
+    background: url('imagens/super\ Mario\ Odyssey-jogo03.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    margin: auto;
+}
+
+#jogo04 {
+    background: url('imagens/Super\ Mario\ World-jogo04.jpg') no-repeat ;
+    background-size: cover;
+    background-position: center;
+
+    margin: auto;
+
+}
+
+#jogo05 {
+    background: url('imagens/supermariogalaxy2-jogo05.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    margin: auto;
+  
+}
+
+main > section > div {
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+       
 
     text-align: center;
 
-    margin: 10px;
+    margin: auto;
+}
+
+article#botao {
+        margin: auto;
+        text-align: center;
+        padding-bottom: 5px;
+}
+
+#botao > a::after {
+    text-decoration: blue;
 }
 
 footer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
- 
+    background-color: gray;
+    text-align: center;
+    border-radius: 10px;
+
+    font-weight: small;
 }
 
-span {
-    justify-content: center;
-    align-content: center;
 
-    width: 200px;
+footer > a {
+   text-decoration: none;
+}
+
+a:hover {
+    text-decoration: dashed;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    i#burguer {
+        display: none;
+    }
+    menu {
+        display: block;
+    }
+    menu > ul > li {
+        display:  inline-flex;
+    }
+
+    main {
+        width: 768px;
+        margin: auto;
+    }
+    
+    div#imagem {
+        float: center;
+        width: 30%;
+        height: 100%;
+
+        border-radius: 20px;
+    }
+
+    }
+
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    i#burguer {
+        display: none;
+    }
+    menu {
+        display: block;
+    }
+    menu > ul > li {
+        display:  inline-flex;
+    }
+
+    main {
+        width: 992px;
+        margin: auto;
+    }
+
+    div#imagem {
+        float: center;
+        width: 30%;
+        height: 100%;
+
+        border-radius: 20px;
+
+
+    }
+
 }

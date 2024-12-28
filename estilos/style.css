@@ -14,8 +14,14 @@
 }
 
 
+
 body, html {
     background-color: darkgray;
+}
+
+header, main, footer {
+    width: 90vh;
+    margin: auto;
 }
 
 header {
@@ -30,7 +36,7 @@ header {
 
 h1 {
     font-family: 'supermario';
-    font-size: 100px;
+    font-size: 80px;
     text-align: center;
 
     color: white;
@@ -83,7 +89,6 @@ menu > ul > li > a:hover {
 }
 
 main > article {
-    width: 90vh;
     padding: 10px;
     margin: auto;
     background-color: white;
@@ -102,6 +107,8 @@ article> p {
     margin-bottom: 20px;
     text-indent: 20px;
 
+    gap: 0.2em;
+
 }
 
 #mario {
@@ -116,27 +123,27 @@ article> p {
     height: 200px;
     margin-bottom: 10px;
 
-    
-
     border-radius: 10px;
   
 }
 
 footer {
     background-color: rgba(0, 0, 0, 0.301);
-    font-size: small;
     color: white;
+    font-size: small;
     text-align: center;
 
-    border-radius: 12px;
+    padding: 5px;
+
+    border-radius: 10px;
 }
 
 
 /*Para telas pequenas*/
+
 @media screen and (min-width: 768px) and (max-width: 992px) {
 
     header {
-        width: 92.5vh;
         display: block;
         
     }
@@ -158,6 +165,7 @@ footer {
     div#imagem {
         float: center;
         width: 30%;
+        width: 300px;
         height: 100%;
 
         border-radius: 20px;
@@ -167,21 +175,24 @@ footer {
 
     }
 
-}
+
 
 @media screen and (min-width: 992px) and (max-width: 1200px)) {
-    i#burguer {
-        display: none;
-    }
+    
     menu {
         display: block;
     }
+
     menu > ul > li {
         display:  inline-flex;
     }
 
+    i#burguer {
+        display: none;
+    }
+
     main {
-        width: 90vh;
+        width: 992px;
         margin: auto;
     }
 
@@ -194,7 +205,4 @@ footer {
 
 
     }
-
-
-
 }
