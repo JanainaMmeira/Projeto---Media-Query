@@ -30,18 +30,26 @@ header {
     font-family: 'supermario';
 
 }
-h1 {
+header > h1 {
     font-family: 'supermario';
-    font-size: 80px;
+    font-size: 50px;
     text-align: center;
 
     color: white;
 }
 
+
+
 div.titulo {
    flex-flow: row nowrap;
 }
 
+div#personagens {
+    background: url('../imagens/MarioHub_Characters_artwork_chars.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 330px;
+}
 main > section {
     width: 90vh;
     padding: 10px;
@@ -52,11 +60,12 @@ main > section {
 }
 
 
-h2 {
-    padding-bottom: 25px;
+main > section > h2 {
+    padding-bottom: 10px;
+    font-family: 'supermario';
     text-align: center;
 
-    font-size: 2em;
+    font-size:3em;
 }
 
 p {
@@ -90,8 +99,8 @@ section > div#mario {
     background: url('../imagens/MarioHub_Characters_CharBtn_Mario_on.png') no-repeat;
     background-size: cover;
     background-position: center;
-    height: 300px;
-    width: 200px;    
+    height: 250px;
+    width: 120px;    
 
     text-align: center;
 
@@ -103,8 +112,8 @@ section > div#luigi {
     background: url('../imagens/MarioHub_Characters_CharBtn_Luigi_on.png') no-repeat;
     background-size: cover;
     background-position: center;
-    height: 300px;
-    width: 200px;    
+    height: 250px;
+    width: 120px;    
 
     text-align: center;
 
@@ -116,8 +125,8 @@ section > div#peach {
     background: url('../imagens/MarioHub_Characters_CharBtn_Peach_on.png') no-repeat;
     background-size: cover;
     background-position: center;
-    height: 300px;
-    width: 200px;    
+    height: 250px;
+    width: 180px;      
 
     text-align: center;
 
@@ -129,8 +138,8 @@ section > div#daisy {
     background: url('../imagens/MarioHub_Characters_CharBtn_Daisy_on.png') no-repeat;
     background-size: cover;
     background-position: center;
-    height: 300px;
-    width: 200px;    
+    height: 250px;
+    width: 160px;  
 
     text-align: center;
 
@@ -141,28 +150,51 @@ section > div#toad {
     background: url('../imagens/MarioHub_Characters_CharBtn_Toad_on.png') no-repeat;
     background-size: cover;
     background-position: center;
-    height: 300px;
-    width: 200px;    
+    height: 250px;
+    width: 178px;  
 
     text-align: center;
 
     margin: 10px;
 }
 
+section > div#yoshi {
+    background: url('../imagens/MarioHub_Characters_CharBtn_Yoshi_on.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    width: 250px;
+
+    text-align: center;
+
+    margin: 10px;
+
+}
+
 footer {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color: gray;
+
+    border-radius: 20px;
+
+    width: 90vh;
  
 }
 
-span {
+
+.material-symbols-outlined {
     justify-content: center;
     align-content: center;
-
-    width: 200px;
+    width: 90vh;
+    margin: auto;
 }
 
+span {
+    color: black;
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
     i#burguer {
