@@ -93,10 +93,16 @@ span {
 
 }
 
-section {
-    display: block;
+#imagem {
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+       
 
-    justify-items: center;
+    text-align: center;
+
+    margin: auto;  
+
 }
 
 section > div#mario {
@@ -219,7 +225,7 @@ text-decoration: dashed;
     }
     
     div#imagem {
-        float: center;
+        margin: auto;
         width: 30%;
         height: 100%;
 
@@ -246,7 +252,7 @@ text-decoration: dashed;
     }
 
     div#imagem {
-        float: center;
+        margin: auto;
         width: 30%;
         height: 100%;
 

@@ -74,6 +74,19 @@ p {
     gap: 0.2em;
 }
 
+
+#imagem {
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+       
+
+    text-align: center;
+
+    margin: auto;  
+
+}
+
 #jogo01 {
     background: url('imagens/Super\ Mario\ Bros-jogo01.avif') no-repeat;
     background-size: cover;
@@ -117,16 +130,6 @@ p {
   
 }
 
-main > section > div {
-    background-size: cover;
-    background-position: center;
-    height: 400px;
-       
-
-    text-align: center;
-
-    margin: auto;
-}
 
 article#botao {
         margin: auto;
@@ -172,7 +175,7 @@ a:hover {
     }
     
     div#imagem {
-        float: center;
+        margin: auto;
         width: 30%;
         height: 100%;
 
@@ -199,7 +202,7 @@ a:hover {
     }
 
     div#imagem {
-        float: center;
+        margin: auto;
         width: 30%;
         height: 100%;
 
