@@ -88,7 +88,7 @@ p {
     background-size: contain;
     background-position: center;
 
-    border-radius: 20px;
+   
 }
 
 #jogo02 {
@@ -177,8 +177,7 @@ a:hover {
     }
     
     div#imagem {
-        width: 30%;
-        height: 50%;
+        height: 50px;
 
         border-radius: 20px;
 
@@ -201,9 +200,9 @@ a:hover {
         margin: auto;
     }
     
-    .imagem {
+    #imagem {
         margin: auto;  
-        height: 25                                                0px;
+        height: 250px;
         border-radius: 10px;
     
     }
@@ -238,7 +237,7 @@ a:hover {
         margin: auto;
     }
 
-    .imagem {
+    #imagem {
         height: 250px;
         border-radius: 10px;
     

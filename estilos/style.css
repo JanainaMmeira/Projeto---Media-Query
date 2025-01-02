@@ -25,7 +25,7 @@ header, main, footer {
 }
 
 header {
-    display: block;
+    display: flex;
     background-color: gray;
     padding-top: 10px;
 
