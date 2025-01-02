@@ -27,19 +27,21 @@ header, main, footer {
 header {
     display: block;
     background-color: gray;
-    margin: auto;
-    width: 92.5vh;
-    text-align: center;
+    padding-top: 10px;
 
     border-radius: 20px;
 }
 
-h1 {
-    font-family: 'supermario';
-    font-size: 80px;
-    text-align: center;
+.mario1 {
 
-    color: white;
+    background: url('../imagens/SUPER-Mario-Bros-02-01-2025.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 140px;
+    position: inherit;
+
+    border-radius: 10px;
+
 }
 
 div.titulo {
@@ -116,16 +118,26 @@ article> p {
 }
 
 
-#imagem {
+.mariocp {
     background: url('../imagens/personagens-mario-capa.webp') no-repeat;
-    background-size: cover;
     background-position: center;
-    height: 200px;
+    background-size: cover;
+    height: 250px;
     position: inherit;
     margin-bottom: 10px;
 
     border-radius: 10px;
   
+
+}
+
+.personagens {
+    background: url('../imagens/MarioHub_Characters_artwork_chars.png') no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 350px;
+    position: inherit;
+
 
 }
 
@@ -141,7 +153,38 @@ footer {
 }
 
 
+
 /*Para telas pequenas*/
+
+@media screen and (min-width: 330px) and (max-width: 768px) {
+
+    header {
+        display: block;
+        
+    }
+    i#burguer {
+        display: none;
+    }
+    menu {
+        display: block;
+    }
+    menu > ul > li {
+        display:  inline-flex;
+    }
+
+    main {
+        width: 330px;
+        margin: auto;
+    }
+    
+    div#imagem {
+        width: 30%;
+        height: 50%;
+
+        border-radius: 20px;
+
+
+    }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
 
@@ -165,7 +208,6 @@ footer {
     }
     
     div#imagem {
-        float: center;
         width: 30%;
         height: 50%;
 
@@ -209,7 +251,6 @@ footer {
     }
 
     div#imagem {
-        float: center;
         width: 30%;
         height: 100%;
 
