@@ -181,8 +181,9 @@ text-decoration: dashed;
     }
     
     div#imagem {
+        margin: auto;  
         width: 30%;
-        height: 50%;
+        height: 20%;
 
         border-radius: 20px;
 
